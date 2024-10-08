@@ -21,4 +21,5 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git add .
         git commit -m 'Update the data' || echo "Nothing to commit"
+        git pull --ff-only
         git push
