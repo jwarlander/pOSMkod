@@ -32,4 +32,5 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git add ./data/osm_codes.csv
         git commit -m 'Update the data' || echo "Nothing to commit"
+        git pull --ff-only
         git push
